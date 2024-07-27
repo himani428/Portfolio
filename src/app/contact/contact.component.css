@@ -1,0 +1,15 @@
+.section {
+    animation: fadeIn 2s;
+    color: #da8374;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .example-full-width {
+    width: 100%;
+    color: #da8374;
+  }
+  

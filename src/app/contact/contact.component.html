@@ -1,0 +1,15 @@
+<div class="container section">
+  <h1>Contact Me</h1>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Name" [(ngModel)]="contact.name" name="name" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" [(ngModel)]="contact.email" name="email" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Message" [(ngModel)]="contact.message" name="message" required></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Send</button>
+  </form>
+</div>
